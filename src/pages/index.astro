@@ -41,8 +41,10 @@
         h2 { font-size: 24px; margin-top: 0; }
         p { color: #515154; margin-bottom: 20px; }
         
-        .contact-info { font-size: 15px; color: #515154; border-top: 1px solid #e5e5e5; padding-top: 20px; margin-top: 20px; }
+        .contact-info { font-size: 15px; color: #515154; border-top: 1px solid #e5e5e5; padding-top: 20px; margin-top: 20px; display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; }
+        .address-block { flex: 1; min-width: 200px; }
         .contact-item { display: block; margin-bottom: 8px; }
+        .email-block { flex: 1; min-width: 200px; }
         
         footer { text-align: center; color: #86868b; font-size: 13px; margin-top: 50px; }
     </style>
@@ -71,12 +73,16 @@
         <div class="section">
             <h2>Corporate Headquarters</h2>
             <div class="contact-info">
-                <span class="contact-item"><strong>Cepha, LLC</strong></span>
-                <span class="contact-item">431 N Mary St</span>
-                <span class="contact-item">Lancaster, PA 17603</span>
-                <span class="contact-item">United States</span>
-                <br>
-                <span class="contact-item">Email: <a href="mailto:trevor@cephacorp.com">trevor@cephacorp.com</a></span>
+                <div class="address-block">
+                    <span class="contact-item"><strong>Cepha, LLC</strong></span>
+                    <span class="contact-item">431 N Mary St</span>
+                    <span class="contact-item">Lancaster, PA 17603</span>
+                    <span class="contact-item">United States</span>
+                </div>
+                <div class="email-block">
+                    <span class="contact-item"><strong>Contact</strong></span>
+                    <span class="contact-item">Email: <a href="mailto:trevor@cephacorp.com">trevor@cephacorp.com</a></span>
+                </div>
             </div>
         </div>
         
