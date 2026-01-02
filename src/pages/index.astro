@@ -19,8 +19,14 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
+        
+        nav { margin-bottom: 60px; padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; }
+        nav a { text-decoration: none; color: #1d1d1f; font-weight: 500; margin-right: 20px; }
+        nav a:hover { color: #0066cc; }
+        nav .active { color: #0066cc; }
+        
         header { margin-bottom: 60px; text-align: center; }
         h1 { font-size: 40px; font-weight: 700; letter-spacing: -1px; margin-bottom: 10px; }
         .tagline { font-size: 22px; color: #86868b; font-weight: 400; }
@@ -43,6 +49,12 @@
 </head>
 <body>
     <div class="container">
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/privacy">Privacy Policy</a>
+        </nav>
+        
         <header>
             <h1>Cepha, LLC</h1>
             <div class="tagline">iOS Game & Application Development</div>
